@@ -1,0 +1,83 @@
+body {
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    background-image: linear-gradient(180deg, rgb(46, 48, 48), #606063);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    margin: 3rem 6rem;
+    padding: 2rem;
+    background-color: #ddd;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+header img {
+    height: 5rem;
+    width: 5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+nav a:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+.faq {
+    padding: .2rem 2rem;
+    border-radius: 5px;
+    border-bottom: 1px solid #fff;
+
+}
+
+.faq div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq button {
+    cursor: pointer;
+    margin: 1.2rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.faq button:hover {
+    background-color: #bbb;
+}
+
+.faq p {
+    display: none;
+}
+
+.faq.active {
+    background-color: #fff;
+}
+
+.faq.active p {
+    display: block;
+}

@@ -1,0 +1,297 @@
+body {
+    margin: 0;
+    background-color: #0c1821;
+    color: #ccc;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header img {
+    height: 5rem;
+    width: 5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+nav a:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+#hero {
+    height: 49rem;
+    background-image: url('../img/uni-banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#hero-content {
+    width: 80%;
+    top: 40%;
+    background-color: rgba(51, 47, 47, 0.8);
+    box-shadow: 2px 4px 8px rgb(68, 67, 67);
+    border-radius: 8px;
+    text-align: center;
+    padding: 50px 0;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* about */
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about>div {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+
+table,
+th,
+td {
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 15px;
+}
+
+/* form */
+
+*:focus {
+    outline: 0;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    padding: 10px;
+    background: #0c1821;
+    color: #ccc;
+    border-radius: 4px;
+}
+
+label {
+    font-size: 1.5em;
+    color: #ccc;
+    display: block;
+    text-align: start;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+textarea:focus {
+    border: 1px solid green;
+}
+
+input[type=submit] {
+    background: #0c5591;
+    outline: 0;
+    color: rgb(255, 255, 255);
+    border: 0;
+    padding: 12px 24px;
+    border-radius: 4px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+input[type=submit]:hover {
+    background: #1d75bd;
+}
+
+#campus {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+}
+
+#campus>div {
+    text-align: center;
+    margin: 1.5rem;
+}
+
+
+/* staff */
+
+.staff {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.staff>div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 15px;
+}
+
+.card img {
+    width: 300px;
+    height: 250px;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+.awards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.awards>div {
+    display: flex;
+}
+
+.awards img {
+    height: 15rem;
+    width: 80%;
+    object-fit: cover;
+}
+
+
+/* review courasel */
+
+#reviews {
+    margin: 1rem auto;
+    width: 100%;
+    max-width: 810px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+#carousel::-webkit-scrollbar {
+    height: 0;
+}
+
+#prev,
+#next {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 50%;
+    outline: 0;
+    cursor: pointer;
+}
+
+#prev {
+    transform: translate(50%, -50%);
+    display: none;
+}
+
+#next {
+    transform: translate(-50%, -50%);
+}
+
+#content {
+    display: grid;
+    grid-gap: 16px;
+    grid-auto-flow: column;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.item {
+    width: 15rem;
+    height: 15rem;
+}
+
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 2rem;
+}
